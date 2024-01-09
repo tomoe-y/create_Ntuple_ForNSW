@@ -1074,8 +1074,8 @@ StatusCode MyxAODAnalysis :: execute ()
 
       if(dR < dRmin) {
 
-        //dRmin = dR;
-        l1_dRoff = dR;
+        dRmin = dR;
+        l1_dRoff = dRmin;
         l1_eta = l1muon->eta();
         l1_phi = l1muon->phi();
 
