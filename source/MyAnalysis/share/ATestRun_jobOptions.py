@@ -129,7 +129,7 @@ ServiceMgr.EventSelector.InputCollections = [
     #'/home/toyamash/CreateAODforNSW/run/data23_13p6TeV.00460096.physics_Main.recon.AOD.r15081_r15082_tid35283096_00._0001.pool.root']
     #'/home/toyamash/CreateAODforNSW/test/data23_13p6TeV.00454163.physics_Main.recon.AOD._0001.pool.root']
     #'/home/toyamash/CreateAODforNSW/test_withMM/data23_13p6TeV.00454163.physics_Main.recon.AOD._0001.pool.root']
-    #'/gpfs/fs8001/toyamash/dataFotNSW/data23_13p6TeV.00454163.physics_Main.merge.AOD.f1360_m2179/data23_13p6TeV.00454163.physics_Main.merge.AOD.f1360_m2179._lb1033._0004.1']
+    '/gpfs/fs8001/toyamash/dataFotNSW/data23_13p6TeV.00454163.physics_Main.merge.AOD.f1360_m2179/data23_13p6TeV.00454163.physics_Main.merge.AOD.f1360_m2179._lb1033._0004.1']
     #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._001175.AOD.pool.root',
     #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._003014.AOD.pool.root',
     #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._004412.AOD.pool.root',
@@ -144,16 +144,14 @@ ServiceMgr.EventSelector.InputCollections = [
     #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._018799.AOD.pool.root',
     #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._029119.AOD.pool.root',
     #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._011200.AOD.pool.root',
-    '/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._022911.AOD.pool.root',
-    '/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._027511.AOD.pool.root']
-
-
+    #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._022911.AOD.pool.root',
+    #'/gpfs/fs8001/toyamash/dataFotNSW/user.toyamash.20231218_v2.data22_13p6TeV.00454163.physics_Main.recon.RAW_EXT0/user.toyamash.36254403.EXT0._027511.AOD.pool.root']
 
 # output file
 ServiceMgr += CfgMgr.THistSvc()
 ServiceMgr.THistSvc.Output += [
     #"ANALYSIS DATAFILE='MyxAODAnalysis_valid1.601190.PhPy8EG_AZNLO_Zmumu.output.root' OPT='RECREATE'"
-    "ANALYSIS DATAFILE='MyxAODAnalysis_data23_13p6TeV_0109_withoutMM.00454163.physics_Main.merge.AOD.root' OPT='RECREATE'"
+    "ANALYSIS DATAFILE='MyxAODAnalysis_data23_13p6TeV_0109_v2_withoutMM.00454163.physics_Main.merge.AOD.root' OPT='RECREATE'"
     ]
 ServiceMgr.THistSvc.MaxFileSize=-1 #speeds up jobs that output lots of histograms
 

@@ -1070,9 +1070,9 @@ StatusCode MyxAODAnalysis :: execute ()
 
       dR = tlv_l1.DeltaR(tlv_off);
 
-      //if(dR > dRreq) continue;
+      if(dR > dRreq) continue;
 
-      //if(dR < dRmin) {
+      if(dR < dRmin) {
 
         //dRmin = dR;
         l1_dRoff = dR;
@@ -1157,7 +1157,7 @@ StatusCode MyxAODAnalysis :: execute ()
         }
 
         roiWord = (*l2sa)->roiWord();
-      //}
+      }
 
     }
 
